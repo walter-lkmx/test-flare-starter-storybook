@@ -6,10 +6,18 @@
 
 <script>
 export default {
-
+    metaInfo() {
+        return {
+            title: this.$page.content.title
+        }
+    }
 }
 </script>
 
-<style>
-
-</style>
+<page-query>
+query($id: ID) {
+  content(id: $id) {
+    title
+  }
+}
+</page-query>
