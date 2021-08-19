@@ -12,5 +12,24 @@
     "@gridsome/vue-remark": "^0.2.6",
     "@lkmx/flare": "^0.3.5",
     "gridsome": "^0.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@storybook/addon-actions": "^6.3.7",
+    "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-links": "^6.3.7",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/vue": "^6.3.7",
+    "@storybook/addon-a11y": "^6.3.7",
+    "@storybook/addon-storysource": "^6.3.7",
+    "@storybook/addon-viewport": "^6.3.7",
+    "storybook-addon-designs": "^6.0.1",
+    "storybook-addon-perfect-design": "^1.0.1",
+    "babel-loader": "^8.2.2",
+    "css-loader": "5.2.6",
+    "sass": "^1.36.0",
+    "sass-loader": "10",
+    "style-loader": "2.0.0",
+    "vue-loader": "^15.9.8"
   }
 }
