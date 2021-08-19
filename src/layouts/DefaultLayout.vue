@@ -1,13 +1,11 @@
 <template>
   <simple-layout>
     <template #header>
-      <simple-header>
-        <img class="header__logo" src="@/assets/flare--white.png">
-        <nav>
-          <g-link to="/">Index</g-link>
-          <g-link to="/about">About</g-link>
-        </nav>
-      </simple-header>
+      <alert-bar
+        message="A solar flare is a sudden flash of increased brightness on the Sun, usually observed near its surface and in close proximity to a sunspot group. ☀️" />
+      <new-header mode="full" logo="flare--white.png"
+        :mainNavigation='[{"title":"Eat","to":"/eat"},{"title":"More","to":"/more"},{"title":"Tacos","to":"/tacos"}]'
+        :actions='[{"title":"🌶","to":"/"},{"title":"🌮","to":"/"}]' />
     </template>
 
     <page>
@@ -26,18 +24,19 @@
 </template>
 
 <static-query>
-query {
+  query {
   metadata {
-    siteName
+  siteName
   }
-}
+  }
 </static-query>
 
 <style lang="scss">
-.header {
-  &__logo {
-    height: 60px;
-    padding: var(--f-gutter-s) var(--f-gutter);
+  .header {
+    &__logo {
+      height: 60px;
+      padding: var(--f-gutter-s) var(--f-gutter);
+    }
   }
-}
+
 </style>
